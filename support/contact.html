@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QVPMLVK');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4418R1D1WV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4418R1D1WV');</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Bioprotech</title>
+<link href="../Bioprotech Design System/colors_and_type.css" rel="stylesheet"/>
+<link href="../assets/css/site.css" rel="stylesheet"/>
+<style>
+  .contact-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 64px; align-items: start; }
+  .contact-info h3 { font-size: 20px; font-weight: 700; color: var(--bp-accent5); margin-bottom: 12px; }
+  .contact-info .row { padding: 16px 0; border-bottom: 1px solid var(--bp-lt2); font-size: 14px; color: var(--bp-dk2); }
+  .contact-info .row strong { display: block; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--bp-accent5); margin-bottom: 6px; font-weight: 700; }
+  .contact-info .row a { color: var(--bp-accent5); }
+  .form-wrap { background: #F7F8FA; padding: 40px; }
+  .form-wrap h3 { font-size: 20px; font-weight: 700; color: var(--bp-accent5); margin-bottom: 24px; }
+  .form-actions { display: flex; gap: 12px; margin-top: 24px; }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: 32px; } .form-wrap { padding: 28px 20px; } }
+</style>
+<link href="../assets/css/theme-apple.css" rel="stylesheet"/>
+</head>
+<body data-base=".." data-lang="en" data-nav="contact">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5QVPMLVK" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="bp-header-slot"></div>
+<section class="page-hero">
+<nav class="breadcrumb"><span>Contact</span></nav>
+
+<h1 class="en-only">Contact Us<span class="en">Inquiries</span></h1>
+
+<p class="lead en-only">Product quotes, sample requests, distribution partnerships, and other inquiries.<br/>Our sales team responds within 3 business days.</p>
+</section>
+<main class="page-body">
+<div class="contact-grid">
+<div class="contact-info">
+<h3 class="en-only">Contact Info</h3>
+
+<div class="row en-only"><strong>HQ</strong>(26365) 151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do, Korea</div>
+
+<div class="row en-only"><strong>Tel / Fax</strong>+82-33-735-7720 · Fax +82-33-735-7736</div>
+<div class="row"><strong>Email</strong><a href="mailto:info@protechsite.com">info@protechsite.com</a></div>
+
+<div class="row en-only"><strong>Hours</strong>Weekdays 09:00 ~ 18:00 KST (Lunch 12:00 ~ 13:00)<br/>Closed on weekends and Korean holidays</div>
+
+<div class="row en-only"><strong>Overseas Entities</strong>USA · BPU / CHN · BPC (Yantai), BPG (Guangzhou)</div>
+
+<p class="placeholder-empty en-only" style="margin-top:24px"><strong>Messaging Channel · Map</strong>Reserved for messaging channel link and Naver/Google Maps embed. To be connected after channel is set up.</p>
+</div>
+<form class="form-wrap" id="contact-form" novalidate="">
+<h3 class="en-only">Inquiry Form</h3>
+<div class="form-msg" id="form-msg"></div>
+<input aria-hidden="true" autocomplete="off" name="_honey" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" tabindex="-1" type="text"/>
+<div class="form-grid">
+<div class="form-row">
+<label><span class="en-only">Name</span><span class="req">*</span></label>
+<input name="name" required=""/>
+</div>
+<div class="form-row">
+<label><span class="en-only">Organization / Company</span></label>
+<input name="company"/>
+</div>
+<div class="form-row">
+<label><span class="en-only">Email</span><span class="req">*</span></label>
+<input name="email" required="" type="email"/>
+</div>
+<div class="form-row">
+<label><span class="en-only">Phone</span></label>
+<input inputmode="tel" name="phone"/>
+</div>
+<div class="form-row full">
+<label><span class="en-only">Inquiry Type</span><span class="req">*</span></label>
+<select data-i18n-select="type" name="type" required="">
+<option data-en="Select one" data-es="Seleccione una opción" data-ko="Select one" value="">Select one</option>
+<option data-en="Quote" data-es="Presupuesto" data-ko="Quote" value="quote">Quote</option>
+<option data-en="Sample Request" data-es="Solicitud de muestra" data-ko="Sample Request" value="sample">Sample Request</option>
+<option data-en="Partnership / Distribution" data-es="Alianza / Distribución" data-ko="Partnership / Distribution" value="partner">Partnership / Distribution</option>
+<option data-en="Technical" data-es="Consulta técnica" data-ko="Technical" value="technical">Technical</option>
+<option data-en="Quality / Certification" data-es="Calidad / Certificación" data-ko="Quality / Certification" value="quality">Quality / Certification</option>
+<option data-en="Other" data-es="Otro" data-ko="Other" value="etc">Other</option>
+</select>
+</div>
+<div class="form-row full">
+<label><span class="en-only">Product of Interest</span></label>
+<select data-i18n-first-option="" name="product">
+<option data-en="Select (optional)" data-es="Seleccione (opcional)" data-ko="Select (optional)" value="">Select (optional)</option>
+</select>
+</div>
+<div class="form-row full">
+<label><span class="en-only">Subject</span><span class="req">*</span></label>
+<input name="subject" required=""/>
+</div>
+<div class="form-row full">
+<label><span class="en-only">Message</span><span class="req">*</span></label>
+<textarea data-ph-en="Please describe the product, quantity, shipping location, and any other requirements for a faster response." data-ph-es="Indique el producto, la cantidad, el lugar de entrega y cualquier otro requisito para recibir una respuesta más rápida."  name="message" required=""></textarea>
+</div>
+<div class="form-row full">
+<label class="form-consent">
+<input name="consent" required="" type="checkbox"/>
+
+<span class="en-only">I consent to the collection and use of my personal data. Items: name, email, phone, inquiry content. Retention: 3 years after inquiry is resolved. <a href="../legal/privacy.html">Privacy Policy</a></span>
+</label>
+</div>
+</div>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit"><span class="en-only">Submit</span> <span class="arrow">→</span></button>
+<button class="btn btn-ghost" type="reset"><span class="en-only">Reset</span></button>
+</div>
+</form>
+</div>
+</main>
+<div id="bp-footer-slot"></div>
+<script src="../assets/js/data-bundle.js"></script>
+<script src="../assets/js/chrome.js"></script>
+<script>
+(async function () {
+  const lang = window.bpLang();
+
+  // Localize select options / textarea placeholder
+  document.querySelectorAll('select option[data-ko]').forEach(o => {
+    o.textContent = o.dataset[lang];
+  });
+  document.querySelectorAll('textarea[data-ph-ko]').forEach(t => {
+    t.placeholder = t.dataset['ph' + ({ko:'En', en:'En', es:'Es'}[lang] || 'Ko')];
+  });
+
+  // pre-fill product dropdown from products.json
+  try {
+    const res = await fetch('../assets/data/products.json');
+    const data = await res.json();
+    const sel = document.querySelector('select[name="product"]');
+    data.categories.sort((a,b)=>a.order-b.order).forEach(cat => {
+      const og = document.createElement('optgroup');
+      og.label = cat.name[lang];
+      data.products.filter(p=>p.cat===cat.id).sort((a,b)=>a.order-b.order).forEach(p=>{
+        const o = document.createElement('option');
+        o.value = p.id;
+        o.textContent = p.name[lang];
+        og.appendChild(o);
+      });
+      sel.appendChild(og);
+    });
+  } catch(e) {}
+
+  // pre-select from ?subject=quote etc.
+  const sub = window.bpQuery('subject');
+  if (sub) {
+    const t = document.querySelector('select[name="type"]');
+    if ([...t.options].some(o => o.value === sub)) t.value = sub;
+  }
+  const pid = window.bpQuery('product');
+  if (pid) {
+    const p = document.querySelector('select[name="product"]');
+    p.value = pid;
+  }
+
+  const form = document.getElementById('contact-form');
+  const msg = document.getElementById('form-msg');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    msg.className = 'form-msg';
+    const fd = new FormData(form);
+    const data = Object.fromEntries(fd);
+    // simple validation
+    if (!data.name || !data.email || !data.subject || !data.message || !data.type || !data.consent) {
+      msg.className = 'form-msg err';
+      msg.textContent = ({ko:'Please fill in all required fields.', en:'Please fill in all required fields.', es:'Por favor, complete todos los campos obligatorios.'})[lang] || '';
+      return;
+    }
+    if (!/^\S+@\S+\.\S+$/.test(data.email)) {
+      msg.className = 'form-msg err';
+      msg.textContent = ({ko:'Please enter a valid email address.', en:'Please enter a valid email address.', es:'Por favor, introduzca una dirección de correo electrónico válida.'})[lang] || '';
+      return;
+    }
+
+    
+    
+    
+    
+    
+    
+    const FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@protechsite.com';
+    const typeSel = form.querySelector('select[name="type"]');
+    const prodSel = form.querySelector('select[name="product"]');
+    const payload = {
+      '_subject': `[Website Inquiry] ${typeSel.options[typeSel.selectedIndex].dataset.ko || data.type} · ${data.subject}`,
+      '_replyto': data.email,
+      '_template': 'table',
+      '_captcha': 'false',
+      'Name': data.name,
+      'Company': data.company || '-',
+      'Email': data.email,
+      'Phone': data.phone || '-',
+      'Type': typeSel.options[typeSel.selectedIndex].dataset.ko || data.type,
+      'Product': prodSel && prodSel.value ? prodSel.options[prodSel.selectedIndex].textContent : '-',
+      'Subject': data.subject,
+      'Message': data.message,
+      'Language': lang,
+      'Page': location.href,
+      'Privacy consent': 'Agreed'
+    };
+    const btn = form.querySelector('button[type="submit"]');
+    if (btn) btn.disabled = true;
+    try {
+      if (form.querySelector('input[name="_honey"]') && form.querySelector('input[name="_honey"]').value) throw new Error('spam');
+      const res = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) });
+      const out = await res.json().catch(() => ({}));
+      if (!res.ok || String(out.success) === 'false') throw new Error(out.message || 'send failed');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ 'event': 'form_submit_success' });
+      msg.className = 'form-msg ok';
+      msg.innerHTML = ({
+        ko: '<strong>Inquiry received.</strong> Our sales team will reply to your email within 3 business days.',
+        en: '<strong>Inquiry received.</strong> Our sales team will reply to your email within 3 business days.',
+        es: '<strong>Consulta recibida.</strong> Nuestro equipo comercial responderá a su correo en un plazo de 3 días hábiles.'
+      })[lang] || '';
+      form.reset();
+      if (btn) btn.disabled = false;
+      msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (err) {
+      if (btn) btn.disabled = false;
+      msg.className = 'form-msg err';
+      msg.textContent = ({
+        ko: 'An error occurred while sending. Please try again later or email info@protechsite.com.',
+        en: 'An error occurred while sending. Please try again later or email info@protechsite.com.',
+        es: 'Se produjo un error al enviar. Inténtelo de nuevo más tarde o escriba a info@protechsite.com.'
+      })[lang] || '';
+    }
+  });
+})();
+</script>
+</body>
+</html>

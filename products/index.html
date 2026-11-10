@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QVPMLVK');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4418R1D1WV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4418R1D1WV');</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Products | Bioprotech</title>
+<meta content="Bioprotech product line-up: electrosurgery, cardiology, neurology and pain management." name="description"/>
+<link href="../Bioprotech Design System/colors_and_type.css" rel="stylesheet"/>
+<link href="../assets/css/site.css" rel="stylesheet"/>
+<style>
+  
+  .cat-wrap { padding: 72px max(48px, calc((100% - 1180px) / 2)) 112px; }
+  .cat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+  .cat-card { display: flex; flex-direction: column; color: inherit; }
+  .cat-img { aspect-ratio: 3 / 4; background: #f4f6f9; overflow: hidden; }
+  .cat-img img { display: block; width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply; transition: transform .5s ease; }
+  .cat-card:hover .cat-img img { transform: scale(1.03); }
+  .cat-body { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; padding: 20px 2px 0; }
+  .cat-code { font-size: 11px; font-weight: 700; letter-spacing: .18em; color: #14306b; margin-bottom: 6px; }
+  .cat-card h2 { font-size: 22px; font-weight: 700; color: #0a1428; line-height: 1.25; letter-spacing: -0.01em; }
+  .cat-card h2 small { display: block; font-size: 13px; font-weight: 500; color: #6e6e73; margin-top: 4px; letter-spacing: 0; }
+  .cat-go { flex: none; font-size: 20px; line-height: 1; color: #14306b; padding-bottom: 3px; transition: transform .2s; }
+  .cat-card:hover .cat-go { transform: translateX(4px); }
+  @media (max-width: 1000px) { .cat-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 20px; } }
+  @media (max-width: 560px) { .cat-wrap { padding: 40px 16px 72px; } .cat-grid { gap: 20px 14px; } .cat-body { padding-top: 14px; } .cat-card h2 { font-size: 17px; } .cat-code { font-size: 10px; } }
+</style>
+<link href="../assets/css/theme-apple.css" rel="stylesheet"/>
+</head>
+<body data-base=".." data-lang="en" data-nav="products">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5QVPMLVK" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="bp-header-slot"></div>
+<section class="page-hero">
+<nav class="breadcrumb">
+<span><span class="en-only">Products</span></span>
+</nav>
+<h1>
+<span class="en-only">Products</span>
+<span class="en">Product Line-up</span>
+</h1>
+<p class="lead">
+
+<span class="en-only">Four specialized lines: Electrosurgery, Cardiology, Neurology, Pain Management.<br/>A full portfolio of disposable and reusable medical devices for clinical precision.</span>
+</p>
+</section>
+<main class="cat-wrap"><div class="cat-grid" id="catalog"></div></main>
+<div id="bp-footer-slot"></div>
+<script src="../assets/js/data-bundle.js"></script>
+<script src="../assets/js/chrome.js"></script>
+<script>
+(async function () {
+  const res = await fetch('../assets/data/products.json');
+  const data = await res.json();
+  const lang = window.bpLang();
+  const IMG = { esu: 'esu', cardio: 'cardio', neuro: 'neuro', pain: 'pain' };   
+  const U = { ko: ' products', en: ' products', es: ' productos' }, V = { ko: 'View products', en: 'View products', es: 'Ver productos' };
+  document.getElementById('catalog').innerHTML = data.categories.sort((a, b) => a.order - b.order).map(cat => {
+    const n = data.products.filter(p => p.cat === cat.id).length;
+    const img = IMG[cat.id]
+      ? `<img src="../assets/img/categories/${IMG[cat.id]}-tall.jpg" alt="${cat.name.en}" loading="lazy">`
+      : `<span class="none">${cat.sub.en}</span>`;
+    return `<a class="cat-card" href="category.html?cat=${cat.id}" title="${cat.desc[lang]} (${n}${U[lang]})">
+      <div class="cat-img">${img}</div>
+      <div class="cat-body">
+        <div><div class="cat-code">${cat.sub.en}</div><h2>${cat.name.en}${lang !== 'en' ? `<small>${cat.name[lang]}</small>` : ''}</h2></div>
+        <span class="cat-go" aria-hidden="true">→</span>
+      </div>
+    </a>`;
+  }).join('');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QVPMLVK');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4418R1D1WV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4418R1D1WV');</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exhibitions &amp; Conferences | Bioprotech</title>
+<meta content="Bioprotech exhibition and conference schedule." name="description"/>
+<link href="../Bioprotech Design System/colors_and_type.css" rel="stylesheet"/>
+<link href="../assets/css/site.css" rel="stylesheet"/>
+<style>
+  
+  .ex-years { display: flex; justify-content: center; gap: 36px; border-bottom: 1px solid #d2d2d7; margin-bottom: 48px; }
+  .ex-years button { appearance: none; background: none; border: 0; font: inherit; font-size: 17px; font-weight: 600; color: #86868b; padding: 0 2px 16px; cursor: pointer; position: relative; }
+  .ex-years button.on { color: #0a1428; }
+  .ex-years button.on::after { content: ''; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: #0a1428; }
+  .ex-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px 28px; }
+  .ex-item { display: flex; flex-direction: column; }
+  .ex-poster { aspect-ratio: 4 / 3; background: #0a1428; overflow: hidden; margin-bottom: 20px; }
+  .ex-poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .ex-poster .tile { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; padding: 24px; color: #fff; }
+  .ex-poster .tile b { font-size: 30px; font-weight: 800; line-height: 1.1; letter-spacing: -0.01em; }
+  .ex-poster .tile span { font-size: 13px; color: rgba(255,255,255,.6); margin-top: 8px; }
+  .ex-item h4 { font-size: 18px; font-weight: 700; color: #1d1d1f; line-height: 1.4; margin-bottom: 12px; word-break: keep-all; }
+  .ex-item h4 em { font-style: normal; font-size: 12px; font-weight: 600; color: #b25e00; margin-left: 6px; vertical-align: 2px; }
+  .ex-info { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 6px; }
+  .ex-info li { font-size: 14px; color: #424245; line-height: 1.5; word-break: keep-all; }
+  .ex-info li b { font-weight: 600; color: #1d1d1f; margin-right: 6px; }
+  .ex-more { margin-top: auto; align-self: flex-start; font-size: 14px; font-weight: 600; color: #0a1428; border-bottom: 1px solid #0a1428; padding-bottom: 2px; }
+  .ex-more:hover { color: #14306b; border-color: #14306b; }
+  .ex-empty { text-align: center; color: #86868b; padding: 60px 0; }
+  .ex-pager { display: flex; justify-content: center; gap: 6px; margin-top: 56px; }
+  .ex-pager button { min-width: 36px; height: 36px; border: 0; background: none; font: inherit; font-size: 14px; color: #6e6e73; cursor: pointer; }
+  .ex-pager button.on { color: #0a1428; font-weight: 700; text-decoration: underline; text-underline-offset: 6px; }
+  .ex-note { margin-top: 56px; padding-top: 20px; border-top: 1px solid #d2d2d7; font-size: 13px; color: #86868b; line-height: 1.7; }
+  @media (max-width: 900px) { .ex-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .ex-grid { grid-template-columns: 1fr; } .ex-years { gap: 22px; } }
+</style>
+<link href="../assets/css/theme-apple.css" rel="stylesheet"/>
+</head>
+<body data-base=".." data-lang="en" data-nav="news">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5QVPMLVK" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="bp-header-slot"></div>
+<section class="page-hero">
+<nav class="breadcrumb"><a href="index.html">News</a><span class="sep">/</span><span>Exhibitions</span></nav>
+
+<h1 class="en-only">Exhibitions &amp; Congresses<span class="en">Annual Schedule</span></h1>
+
+<p class="lead en-only">Find the trade shows and congresses Bioprotech attends in Korea and abroad.<br/>Meet our products in person.</p>
+</section>
+<div class="company-tabs"><nav aria-label="News">
+<a href="index.html"><span class="en-only">News &amp; IR</span></a>
+<a aria-current="page" class="on" href="exhibition.html"><span class="en-only">Exhibitions</span></a>
+</nav></div>
+<main class="page-body">
+<div class="ex-years" id="ex-year" role="tablist"></div>
+<ul class="ex-grid" id="ex-list"></ul>
+<div class="ex-pager" id="ex-pager"></div>
+
+<p class="ex-note en-only">※ GMES 2026 is actual event information, MEDICA 2026 is sample data and 2027 entries are examples.</p>
+</main>
+<div id="bp-footer-slot"></div>
+<script src="../assets/js/data-bundle.js"></script>
+<script src="../assets/js/chrome.js"></script>
+<script>
+
+const EXHIBITIONS = [
+  { year: 2026, start: '2026-09-03', end: '2026-09-04', status: 'done',
+    short: 'GMES 2026', name: { ko: 'GMES 2026, 22nd Gangwon Medical Equipment Show', en: 'GMES 2026, 22nd Gangwon Medical Equipment Show', es: 'GMES 2026' },
+    city: { ko: 'Medical Device Comprehensive Support Center, Wonju, Korea', en: 'Medical Device Comprehensive Support Center, Wonju, Korea', es: 'Wonju, Corea' },
+    booth: 'W209 (2F)', img: '../assets/img/news/gmes-2026/card.jpg', url: '', news: '2026-gmes' },
+  { year: 2026, start: '2026-11-16', end: '2026-11-19', status: 'plan', sample: true, short: 'MEDICA 2026',
+    name: { ko: 'MEDICA 2026', en: 'MEDICA 2026', es: 'MEDICA 2026' },
+    city: { ko: 'Messe Düsseldorf, Germany', en: 'Messe Düsseldorf, Germany', es: 'Messe Düsseldorf, Alemania' },
+    booth: 'Hall 10 / 10D30', img: '../assets/img/exhibitions/medica-2026.jpg', url: 'https://www.medica-tradefair.com/', news: '2026-medica' },
+  { year: 2027, start: '', end: '', status: 'tbd',
+    short: 'KIMES', name: { ko: '[Example] KIMES', en: '[Example] KIMES', es: '[Ejemplo] KIMES' },
+    city: { ko: 'Seoul, Korea', en: 'Seoul, Korea', es: 'Seúl, Corea' }, booth: '', url: '' },
+  { year: 2027, start: '', end: '', status: 'tbd',
+    short: 'GMES', name: { ko: '[Example] GMES', en: '[Example] GMES', es: '[Ejemplo] GMES' },
+    city: { ko: 'Wonju, Korea', en: 'Wonju, Korea', es: 'Wonju, Corea' }, booth: '', url: '' },
+  { year: 2027, start: '', end: '', status: 'tbd',
+    short: 'MEDICA', name: { ko: '[Example] MEDICA', en: '[Example] MEDICA', es: '[Ejemplo] MEDICA' },
+    city: { ko: 'Düsseldorf, Germany', en: 'Düsseldorf, Germany', es: 'Düsseldorf, Alemania' }, booth: '', url: '' },
+];
+
+(function () {
+  const lang = window.bpLang ? bpLang() : 'en';
+  const L = (ko, en, es) => lang === 'en' ? en : lang === 'es' ? es : ko;
+  const WD = { ko:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], en:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], es:['dom','lun','mar','mié','jue','vie','sáb'] }[lang];
+  const fmt = d => { const t = new Date(d + 'T00:00:00'); return `${d.replace(/-/g, '.')} (${WD[t.getDay()]})`; };
+  const dateText = e => !e.start ? L('To be confirmed', 'To be confirmed', 'Por confirmar') : fmt(e.start) + (e.end && e.end !== e.start ? ' ~ ' + fmt(e.end) : '');
+  const short = e => (e.short || (e.name.en || '').replace(/^\[[^\]]*\]\s*/, '').split(',')[0]);
+  const years = [...new Set(EXHIBITIONS.map(e => e.year))].sort((a, b) => b - a);
+  const thisYear = new Date().getFullYear();
+  let sel = years.includes(thisYear) ? thisYear : years[0], page = 1;
+  const PER = 9;
+  const yearBox = document.getElementById('ex-year'), list = document.getElementById('ex-list'), pager = document.getElementById('ex-pager');
+
+  function drawYears() {
+    yearBox.innerHTML = years.map(y => `<button type="button" role="tab" data-y="${y}" class="${y === sel ? 'on' : ''}">${y}</button>`).join('');
+  }
+  function draw() {
+    const items = EXHIBITIONS.filter(e => e.year === sel).sort((a, b) => (b.start || '0').localeCompare(a.start || '0'));
+    const pages = Math.max(1, Math.ceil(items.length / PER));
+    const view = items.slice((page - 1) * PER, page * PER);
+    list.innerHTML = view.map(e => {
+      const more = e.news ? `detail.html?id=${e.news}` : (e.url || '');
+      const ext = !e.news && e.url;
+      const poster = e.img
+        ? `<img src="${e.img}" alt="${e.name[lang] || e.name.en}" loading="lazy">`
+        : `<div class="tile"><b>${short(e)}</b><span>${e.city[lang] || e.city.en}</span></div>`;
+      return `<li class="ex-item">
+        <div class="ex-poster">${poster}</div>
+        <h4>${e.name[lang] || e.name.en}${e.sample ? `<em>${L('Sample', 'Sample', 'Ejemplo')}</em>` : ''}</h4>
+        <ul class="ex-info">
+          <li><b>${L('Venue', 'Venue', 'Lugar')}</b>${e.city[lang] || e.city.en}</li>
+          <li><b>${L('Date', 'Date', 'Fecha')}</b>${dateText(e)}</li>
+          ${e.booth ? `<li><b>${L('Booth', 'Booth', 'Stand')}</b>${e.booth}</li>` : ''}
+        </ul>
+        ${more ? `<a class="ex-more" href="${more}"${ext ? ' target="_blank" rel="noopener"' : ''}>${L('More', 'More', 'Ver más')}</a>` : ''}
+      </li>`;
+    }).join('') || `<li class="ex-empty">${L('No events scheduled.', 'No events scheduled.', 'No hay eventos.')}</li>`;
+    pager.innerHTML = pages > 1 ? Array.from({ length: pages }, (_, k) => `<button type="button" data-p="${k + 1}" class="${k + 1 === page ? 'on' : ''}">${k + 1}</button>`).join('') : '';
+  }
+  yearBox.addEventListener('click', e => { const b = e.target.closest('button'); if (b) { sel = +b.dataset.y; page = 1; drawYears(); draw(); } });
+  pager.addEventListener('click', e => { const b = e.target.closest('button'); if (b) { page = +b.dataset.p; draw(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+  drawYears(); draw();
+})();
+</script>
+</body>
+</html>

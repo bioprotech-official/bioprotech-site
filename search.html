@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QVPMLVK');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4418R1D1WV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4418R1D1WV');</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Search | Bioprotech</title>
+<link href="Bioprotech Design System/colors_and_type.css" rel="stylesheet"/>
+<link href="assets/css/site.css" rel="stylesheet"/>
+<style>
+  .search-box { display: flex; gap: 8px; margin-bottom: 32px; }
+  .search-box input { flex: 1; padding: 16px 20px; font-size: 15px; border: 1px solid var(--bp-lt2); background: #fff; }
+  .search-box input:focus { border-color: var(--bp-accent5); outline: 0; }
+  .search-group { margin-bottom: 48px; }
+  .search-group h3 { font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--bp-accent5); font-weight: 700; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--bp-lt2); }
+  .result-item { display: block; padding: 16px 0; border-bottom: 1px solid var(--bp-lt2); transition: padding .2s; }
+  .result-item:hover { padding-left: 8px; background: #F7F8FA; }
+  .result-item h4 { font-size: 15px; font-weight: 700; color: var(--bp-dk2); margin-bottom: 4px; }
+  .result-item h4 mark { background: #FFF5B8; color: var(--bp-accent5); padding: 0 2px; }
+  .result-item p { font-size: 13px; color: var(--bp-dk2); opacity: 0.75; }
+  .result-item .kind { font-size: 10px; letter-spacing: 0.22em; font-weight: 700; color: var(--bp-accent5); text-transform: uppercase; margin-right: 8px; }
+  .empty-state { padding: 48px 24px; text-align: center; color: var(--bp-dk2); opacity: 0.6; }
+  .sr-count { font-size: 13px; color: #6e6e73; margin-bottom: 18px; }
+  .search-group { margin-bottom: 28px; }
+  .search-group h3 { font-size: 13px; font-weight: 700; color: #1d1d1f; margin-bottom: 6px; padding-bottom: 8px; border-bottom: 1px solid #e5e5ea; }
+  .search-box input { border-radius: 12px; font-size: 17px; }
+</style>
+<link href="assets/css/theme-apple.css" rel="stylesheet"/>
+</head>
+<body data-base="." data-lang="en" data-nav="">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5QVPMLVK" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="bp-header-slot"></div>
+<section class="page-hero">
+<nav class="breadcrumb"><span>Search</span></nav>
+
+<h1 class="en-only">Search<span class="en">Site-wide</span></h1>
+
+<p class="lead en-only">Search across products, news, and FAQ at once.</p>
+</section>
+<main class="page-body">
+<div class="search-box">
+<input autofocus="" id="q" placeholder="" type="search"/>
+</div>
+<div id="results"><div class="empty-state"></div></div>
+</main>
+<div id="bp-footer-slot"></div>
+<script src="assets/js/data-bundle.js"></script>
+<script src="assets/js/chrome.js"></script>
+<script>
+
+(function () {
+  const lang = window.bpLang();
+  const L = ({
+    ko: { hint: 'Please enter a search term.', none: q => `No results for "${q}".`, cnt: n => `${n} results` },
+    en: { hint: 'Please enter a search term.', none: q => `No results for "${q}".`, cnt: n => `${n} results` },
+    es: { hint: 'Introduzca un término de búsqueda.', none: q => `No se han encontrado resultados para "${q}".`, cnt: n => `${n} resultados` },
+  })[lang] || {};
+  const input = document.getElementById('q'), root = document.getElementById('results');
+  input.setAttribute('aria-label', ({ko:'Search',en:'Search',es:'Buscar'})[lang]);
+  const seed = window.bpQuery('q'); if (seed) input.value = seed;
+  const ORDER = ['prod', 'cat', 'page', 'news', 'faq'];
+  async function render() {
+    const q = input.value.trim();
+    history.replaceState(null, '', q ? '?q=' + encodeURIComponent(q) : location.pathname);
+    if (!q) { root.innerHTML = `<div class="empty-state">${L.hint}</div>`; return; }
+    const r = await window.bpSearch(q);
+    if (!r.length) { root.innerHTML = `<div class="empty-state">${L.none(q)}</div>`; return; }
+    let html = `<p class="sr-count">${L.cnt(r.length)}</p>`;
+    ORDER.forEach(t => {
+      const g = r.filter(x => x.type === t); if (!g.length) return;
+      html += `<section class="search-group"><h3>${window.bpSearchKind(t)} · ${g.length}</h3>${g.map(window.bpSearchItemHTML).join('')}</section>`;
+    });
+    root.innerHTML = html;
+  }
+  let timer;
+  input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(render, 150); });
+  render();
+})();
+</script>
+</body>
+</html>

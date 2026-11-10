@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QVPMLVK');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4418R1D1WV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4418R1D1WV');</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Certifications | Bioprotech</title>
+<meta content="Bioprotech certifications and approvals: ISO 13485, KGMP, CE MDR, FDA 510(k) and MFDS." name="description"/>
+<link href="../Bioprotech Design System/colors_and_type.css" rel="stylesheet"/>
+<link href="../assets/css/site.css" rel="stylesheet"/>
+<style>
+  
+  .cs-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 72px; }
+  .cs-table th, .cs-table td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #d2d2d7; vertical-align: top; line-height: 1.6; }
+  .cs-table thead th { font-size: 12px; font-weight: 600; color: #6e6e73; letter-spacing: .04em; border-bottom: 1px solid #1d1d1f; }
+  .cs-table td:first-child { font-weight: 600; white-space: nowrap; }
+  .cs-table .num { font-family: var(--bp-font-mono); font-size: 12px; color: #424245; word-break: break-all; }
+  .cs-table a { color: var(--bp-accent5); white-space: nowrap; }
+  .cs-wrap { overflow-x: auto; }
+  .cs-note { font-size: 12px; color: #6e6e73; margin: -56px 0 72px; }
+
+  
+  .cert-filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+  .cert-filter button {
+    border: 1px solid #d2d2d7; background: #fff; color: #1d1d1f; border-radius: 980px;
+    padding: 9px 18px; font-size: 14px; font-family: inherit; cursor: pointer;
+  }
+  .cert-filter button .cnt { color: #86868b; margin-left: 4px; font-size: 12px; }
+  .cert-filter button.on { background: #1d1d1f; border-color: #1d1d1f; color: #fff; }
+  .cert-filter button.on .cnt { color: #a1a1a6; }
+
+  
+  .cert-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px 20px; }
+  .cert-card { display: flex; flex-direction: column; gap: 10px; cursor: zoom-in; background: none; border: 0; padding: 0; text-align: left; font-family: inherit; color: inherit; }
+  .cert-thumb {
+    position: relative; aspect-ratio: 1 / 1.414; border-radius: 14px; overflow: hidden;
+    background: #f5f5f7; border: 1px solid #e5e5ea;
+    display: flex; align-items: center; justify-content: center;
+    transition: box-shadow .2s, transform .2s;
+  }
+  .cert-thumb img { width: 100%; height: 100%; object-fit: contain; background: #fff; }
+  .cert-card:hover .cert-thumb, .cert-card:focus-visible .cert-thumb { border-color: #14306b; }
+  .cert-card:focus-visible { outline: none; }
+  .cert-card:focus-visible .cert-thumb { outline: 2px solid var(--bp-accent5); outline-offset: 3px; }
+  .cert-title { font-size: 14px; font-weight: 600; color: #1d1d1f; line-height: 1.4; }
+  .cert-sub { font-size: 12px; color: #6e6e73; line-height: 1.5; margin-top: -4px; }
+  .cert-tags { position: absolute; top: 10px; left: 10px; display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag { font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 980px; background: rgba(29,29,31,.85); color: #fff; }
+  .tag.export { background: #14306b; }
+  .tag.hold { background: #ff9f0a; color: #1d1d1f; }
+  .cert-empty { padding: 48px 0; color: #86868b; }
+
+  
+  .lb { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,.92); display: none; flex-direction: column; }
+  .lb.open { display: flex; }
+  .lb-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; color: #f5f5f7; }
+  .lb-cap { min-width: 0; }
+  .lb-cap b { display: block; font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .lb-cap span { font-size: 12px; color: #a1a1a6; }
+  .lb-ctrl { display: flex; align-items: center; gap: 8px; flex: none; }
+  .lb-count { font-size: 13px; color: #a1a1a6; margin-right: 8px; font-variant-numeric: tabular-nums; }
+  .lb button { background: rgba(255,255,255,.12); color: #fff; border: 0; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+  .lb button:hover { background: rgba(255,255,255,.24); }
+  .lb button svg { width: 20px; height: 20px; }
+  .lb-stage { flex: 1; position: relative; overflow: auto; display: flex; align-items: center; justify-content: center; padding: 0 72px 24px; }
+  .lb-stage img { max-width: 100%; max-height: 100%; object-fit: contain; background: #fff; border-radius: 6px; cursor: zoom-in; user-select: none; }
+  .lb-stage.zoom { align-items: flex-start; justify-content: flex-start; }
+  .lb-stage.zoom img { max-width: none; max-height: none; width: min(1500px, 180%); cursor: zoom-out; margin: 0 auto; }
+  .lb-nav { position: fixed; top: 50%; transform: translateY(-50%); width: 52px !important; height: 52px !important; }
+  .lb-prev { left: 12px; } .lb-next { right: 12px; }
+  @media (max-width: 700px) {
+    .cert-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
+    .lb-stage { padding: 0 8px 16px; }
+    .lb-nav { top: auto; bottom: 16px; transform: none; }
+    .lb-zoom { display: none !important; }
+  }
+</style>
+<link href="../assets/css/theme-apple.css" rel="stylesheet"/>
+</head>
+<body data-base=".." data-lang="en" data-nav="about">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5QVPMLVK" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="bp-header-slot"></div>
+<section class="page-hero">
+<nav class="breadcrumb">
+<a href="about.html">About</a><span class="sep">/</span>
+<span>Certifications</span>
+</nav>
+
+<h1 class="en-only">Certifications<span class="en">Licenses &amp; Registrations</span></h1>
+
+<p class="lead en-only">Browse each license and certificate we hold.<br/>Click any image to view it in full size.</p>
+</section>
+<div class="company-tabs"><nav aria-label="Company">
+<a href="about.html"><span class="en-only">About</span></a>
+<a href="ceo.html"><span class="en-only">CEO Message</span></a>
+<a href="quality.html"><span class="en-only">Quality Policy</span></a>
+<a aria-current="page" class="on" href="certification.html"><span class="en-only">Certifications</span></a>
+</nav></div>
+<main class="page-body">
+
+<div class="bp-kicker" id="list">Certificates</div>
+<div class="cert-filter" id="cert-filter" role="tablist"></div>
+<div class="cert-grid" id="cert-grid"></div>
+
+<div class="bp-kicker" id="status" style="margin-top:88px">Registration Status</div>
+<div class="cs-wrap">
+<table class="cs-table">
+<thead><tr>
+<th><span class="en-only">Region</span></th>
+<th><span class="en-only">Certification</span></th>
+<th><span class="en-only">Scope</span></th>
+<th></th>
+</tr></thead>
+<tbody>
+<tr><td><span class="en-only">Global</span></td><td>ISO 13485:2016</td><td><span class="en-only">All products</span></td><td><a data-open="cert-04" href="#cert-04">↗</a></td></tr>
+<tr><td><span class="en-only">Korea</span></td><td><span class="en-only">Manufacturing License</span></td><td><span class="en-only">All products (manufacturing)</span></td><td><a data-open="cert-01" href="#cert-01">↗</a></td></tr>
+<tr><td><span class="en-only">Korea</span></td><td><span class="en-only">Import License</span></td><td><span class="en-only">Imported items</span></td><td><a data-open="cert-02" href="#cert-02">↗</a></td></tr>
+<tr><td><span class="en-only">Korea</span></td><td>KGMP</td><td>ESU Pencil, Smoke Pencil, Needle electrode</td><td><a data-open="cert-03" href="#cert-03">↗</a></td></tr>
+<tr><td><span class="en-only">Korea</span></td><td><span class="en-only">Product approvals</span></td><td><span class="en-only">All products</span></td><td><a data-filter="product" href="#list">↑</a></td></tr>
+<tr><td><span class="en-only">EU</span></td><td><span class="en-only">EU MDR QMS Certificate (DNV, NB 2460)</span></td><td><span class="en-only">Ground plates, electrosurgical pencils, smoke evacuation pencils (Class IIb)</span></td><td><a data-open="cert-05" href="#cert-05">↗</a></td></tr>
+<tr><td><span class="en-only">EU</span></td><td><span class="en-only">CE Declaration of Conformity (MDR Class I)</span></td><td><span class="en-only">ECG·TAB·Neonatal·TENS·EEG·EMG surface electrodes, Smoke Evacuation System</span></td><td></td></tr>
+<tr><td><span class="en-only">USA</span></td><td>FDA 510(k) Cleared (17)</td><td><span class="en-only">ECG·TAB·Neonatal·TENS electrodes, ESU Plate·Pencil, Smoke Pencil·Evacuator, EMG Needle, TENS·EMS·IF Unit</span></td><td></td></tr>
+<tr><td><span class="en-only">USA</span></td><td>FDA Device Listing (510(k) exempt)</td><td><span class="en-only">Laparoscopic smoke evacuator, Smoke Tubing</span></td><td></td></tr>
+<tr><td><span class="en-only">Japan</span></td><td><span class="en-only">Foreign Manufacturer Registration</span></td><td><span class="en-only">HQ</span></td><td><a data-open="cert-06" href="#cert-06">↗</a></td></tr>
+<tr><td><span class="en-only">China</span></td><td><span class="en-only">Production License (Yantai)</span></td><td><span class="en-only">Active surgical, diagnostic &amp; monitoring devices (Class II)</span></td><td><a data-open="cert-07" href="#cert-07">↗</a></td></tr>
+<tr><td><span class="en-only">China</span></td><td><span class="en-only">NMPA Registration (Yantai)</span></td><td><span class="en-only">Disposable needle electrode</span></td><td><a data-open="cert-48" href="#cert-48">↗</a></td></tr>
+<tr><td><span class="en-only">China</span></td><td><span class="en-only">NMPA Registration (Yantai)</span></td><td><span class="en-only">Electrosurgical electrode (Smoke Pencil · ESU Pencil)</span></td><td><a data-open="cert-49" href="#cert-49">↗</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="cs-note en-only">※ For other countries and product availability by country, please contact our Sales team.</p>
+</main>
+
+<div aria-label="Certificate viewer" aria-modal="true" class="lb" id="lb" role="dialog">
+<div class="lb-top">
+<div class="lb-cap"><b id="lb-title"></b><span id="lb-sub"></span></div>
+<div class="lb-ctrl">
+<span class="lb-count" id="lb-count"></span>
+<button aria-label="Zoom" class="lb-zoom" id="lb-zoom" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"></path></svg></button>
+<button aria-label="Close" id="lb-close" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+</div>
+</div>
+<div class="lb-stage" id="lb-stage"><img alt="" id="lb-img"/></div>
+<button aria-label="Previous" class="lb-nav lb-prev" id="lb-prev" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M15 6l-6 6 6 6"></path></svg></button>
+<button aria-label="Next" class="lb-nav lb-next" id="lb-next" type="button"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M9 6l6 6-6 6"></path></svg></button>
+</div>
+<div id="bp-footer-slot"></div>
+<script src="../assets/js/data-bundle.js"></script>
+<script src="../assets/js/chrome.js"></script>
+<script>
+
+const SHOW_ON_HOLD = true;
+const CERTS = [
+{
+"id": "cert-01",
+"g": "corp",
+"t": "Medical Device Manufacturing License",
+"te": "Medical Device Manufacturing License",
+"sub": "MFDS (Korea)",
+"sube": "MFDS (Korea)",
+"region": "KR"
+},
+{
+"id": "cert-02",
+"g": "corp",
+"t": "Medical Device Import License",
+"te": "Medical Device Import License",
+"sub": "MFDS (Korea)",
+"sube": "MFDS (Korea)",
+"region": "KR"
+},
+{
+"id": "cert-03",
+"g": "corp",
+"t": "KGMP Certificate",
+"te": "KGMP Certificate",
+"sub": "KTL (HQ)",
+"sube": "KTL (HQ)",
+"region": "KR"
+},
+{
+"id": "cert-04",
+"g": "corp",
+"t": "ISO 13485:2016",
+"te": "ISO 13485:2016",
+"sub": "DNV · Medical Device QMS",
+"sube": "DNV · Medical Device QMS",
+"region": "GL"
+},
+{
+"id": "cert-05",
+"g": "global",
+"t": "CE MDR EU QMS Certificate",
+"te": "CE MDR EU QMS Certificate",
+"sub": "DNV (NB 2460)",
+"sube": "DNV (NB 2460)",
+"region": "EU"
+},
+{
+"id": "cert-06",
+"g": "global",
+"t": "Japan Foreign Manufacturer Registration (HQ)",
+"te": "Japan Foreign Manufacturer Registration (HQ)",
+"sub": "MHLW (Japan)",
+"sube": "MHLW (Japan)",
+"region": "JP"
+},
+{
+"id": "cert-07",
+"g": "global",
+"t": "China Medical Device Production License (Yantai)",
+"te": "China Medical Device Production License (Yantai)",
+"sub": "Shandong MPA · issued 2024",
+"sube": "Shandong MPA · issued 2024",
+"region": "CN"
+},
+{
+"id": "cert-48",
+"g": "global",
+"t": "China NMPA Registration · Disposable Needle Electrode (BPC Yantai)",
+"te": "China NMPA Registration · Disposable Needle Electrode (BPC Yantai)",
+"sub": "Shandong MPA · valid Aug 3, 2026 – Aug 2, 2031",
+"sube": "Shandong MPA · valid Aug 3, 2026 – Aug 2, 2031",
+"region": "CN"
+},
+{
+"id": "cert-49",
+"g": "global",
+"t": "China NMPA Registration · Electrosurgical Electrode, Smoke Pencil · ESU Pencil (BPC Yantai)",
+"te": "China NMPA Registration · Electrosurgical Electrode, Smoke Pencil · ESU Pencil (BPC Yantai)",
+"sub": "Shandong MPA · valid Apr 16, 2026 – Apr 15, 2031",
+"sube": "Shandong MPA · valid Apr 16, 2026 – Apr 15, 2031",
+"region": "CN"
+},
+{
+"id": "cert-11",
+"g": "product",
+"t": "AED Pad",
+"te": "AED Pad",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-12",
+"g": "product",
+"t": "Disposable EEG Electrode",
+"te": "Disposable EEG Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-13",
+"g": "product",
+"t": "ECG Electrode",
+"te": "ECG Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-14",
+"g": "product",
+"t": "ECG Electrode",
+"te": "ECG Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-15",
+"g": "product",
+"t": "EEG Electrode",
+"te": "EEG Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-16",
+"g": "product",
+"t": "EEG Gel",
+"te": "EEG Gel",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-17",
+"g": "product",
+"t": "EMG Needle Electrode",
+"te": "EMG Needle Electrode",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-18",
+"g": "product",
+"t": "EMG Needle Electrode",
+"te": "EMG Needle Electrode",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": true
+},
+{
+"id": "cert-19",
+"g": "product",
+"t": "EMG Surface Electrode",
+"te": "EMG Surface Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-20",
+"g": "product",
+"t": "EMS Stimulator",
+"te": "EMS Stimulator",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": true
+},
+{
+"id": "cert-21",
+"g": "product",
+"t": "ESU Pencil",
+"te": "ESU Pencil",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-22",
+"g": "product",
+"t": "ESU Pencil",
+"te": "ESU Pencil",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": true
+},
+{
+"id": "cert-23",
+"g": "product",
+"t": "ESU Plate",
+"te": "ESU Plate",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-24",
+"g": "product",
+"t": "ESU Plate",
+"te": "ESU Plate",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-25",
+"g": "product",
+"t": "ESU Plate Oversized",
+"te": "ESU Plate Oversized",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-26",
+"g": "product",
+"t": "Holter ECG Electrode",
+"te": "Holter ECG Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-27",
+"g": "product",
+"t": "Interferential Stimulator",
+"te": "Interferential Stimulator",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": true
+},
+{
+"id": "cert-28",
+"g": "product",
+"t": "Laparoscopic",
+"te": "Laparoscopic",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-29",
+"g": "product",
+"t": "Neonatal Electrode",
+"te": "Neonatal Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-30",
+"g": "product",
+"t": "Neonatal Electrode",
+"te": "Neonatal Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-31",
+"g": "product",
+"t": "Neonatal Electrode",
+"te": "Neonatal Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-32",
+"g": "product",
+"t": "Reusable EEG Electrode",
+"te": "Reusable EEG Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-33",
+"g": "product",
+"t": "Reusable SpO2 Sensor",
+"te": "Reusable SpO2 Sensor",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-34",
+"g": "product",
+"t": "Smoke Adapter",
+"te": "Smoke Adapter",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-35",
+"g": "product",
+"t": "Smoke Evacuator",
+"te": "Smoke Evacuator",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": true
+},
+{
+"id": "cert-36",
+"g": "product",
+"t": "Smoke Evacuator",
+"te": "Smoke Evacuator",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-37",
+"g": "product",
+"t": "Smoke Pencil",
+"te": "Smoke Pencil",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-38",
+"g": "product",
+"t": "Smoke Pencil",
+"te": "Smoke Pencil",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-39",
+"g": "product",
+"t": "Smoke Pencil",
+"te": "Smoke Pencil",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-40",
+"g": "product",
+"t": "Smoke Pencil Kit",
+"te": "Smoke Pencil Kit",
+"sub": "MFDS · Certification",
+"sube": "MFDS · Certification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-41",
+"g": "product",
+"t": "SpO2 Sensor",
+"te": "SpO2 Sensor",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-42",
+"g": "product",
+"t": "SpO2 Sensor",
+"te": "SpO2 Sensor",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-43",
+"g": "product",
+"t": "SpO2 Sensor",
+"te": "SpO2 Sensor",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": true
+},
+{
+"id": "cert-44",
+"g": "product",
+"t": "TAB Electrode",
+"te": "TAB Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-45",
+"g": "product",
+"t": "TENS Electrode",
+"te": "TENS Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-46",
+"g": "product",
+"t": "TENS Electrode",
+"te": "TENS Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": false
+},
+{
+"id": "cert-47",
+"g": "product",
+"t": "TENS Electrode",
+"te": "TENS Electrode",
+"sub": "MFDS · Notification",
+"sube": "MFDS · Notification",
+"region": "KR",
+"export": true
+}
+];
+
+(function () {
+  const lang = (window.bpLang && bpLang()) || 'en';
+  const L = (ko, en, es) => lang === 'en' ? en : lang === 'es' ? (es || en) : ko;
+  const list = CERTS.filter(c => SHOW_ON_HOLD || !c.hold);
+  const GROUPS = [
+    ['all',     L('All','All','Todos')],
+    ['corp',    L('Licenses & QMS','Licenses & QMS','Licencias y SGC')],
+    ['global',  L('International','International','Internacional')],
+    ['product', L('Korea Product Approvals','Korea Product Approvals','Aprobaciones de producto (Corea)')],
+  ];
+  const grid = document.getElementById('cert-grid');
+  const filt = document.getElementById('cert-filter');
+  let current = 'all', view = list;
+
+  filt.innerHTML = GROUPS.map(([g, label]) => {
+    const n = g === 'all' ? list.length : list.filter(c => c.g === g).length;
+    return `<button type="button" role="tab" data-g="${g}" class="${g==='all'?'on':''}">${label}<span class="cnt">${n}</span></button>`;
+  }).join('');
+  filt.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    setFilter(b.dataset.g);
+  });
+
+  function title(c) { return lang === 'ko' ? c.t : c.te; }
+  function sub(c) { return lang === 'ko' ? c.sub : c.sube; }
+  function tags(c) {
+    let t = '';
+    if (c.export) t += `<span class="tag export">${L('Export only','Export only','Solo exportación')}</span>`;
+    if (c.hold) t += `<span class="tag hold">${L('On hold','On hold','En revisión')}</span>`;
+    return t ? `<div class="cert-tags">${t}</div>` : '';
+  }
+  function setFilter(g) {
+    current = g;
+    filt.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.g === g));
+    view = g === 'all' ? list : list.filter(c => c.g === g);
+    grid.innerHTML = view.map((c, i) => `
+      <button type="button" class="cert-card" data-i="${i}" id="${c.id}">
+        <div class="cert-thumb">${tags(c)}<img loading="lazy" src="../assets/img/certs/thumb/${c.id}.jpg" alt="${title(c)}"></div>
+        <div class="cert-title">${title(c)}</div>
+        <div class="cert-sub">${sub(c)}</div>
+      </button>`).join('') || `<p class="cert-empty">${L('No certificates.','No certificates.','Sin certificados.')}</p>`;
+  }
+  grid.addEventListener('click', e => {
+    const card = e.target.closest('.cert-card'); if (card) open(+card.dataset.i);
+  });
+
+  // ---- Lightbox ----
+  const lb = document.getElementById('lb'), img = document.getElementById('lb-img'),
+        stage = document.getElementById('lb-stage');
+  let idx = 0, lastFocus = null;
+  function show(i) {
+    idx = (i + view.length) % view.length;
+    const c = view[idx];
+    stage.classList.remove('zoom');
+    img.src = `../assets/img/certs/full/${c.id}.jpg`;
+    img.alt = title(c);
+    document.getElementById('lb-title').textContent = title(c);
+    document.getElementById('lb-sub').textContent = sub(c) + (c.export ? ' · ' + L('Export only','Export only','Solo exportación') : '');
+    document.getElementById('lb-count').textContent = `${idx + 1} / ${view.length}`;
+    
+    [1, -1].forEach(d => { const n = view[(idx + d + view.length) % view.length]; new Image().src = `../assets/img/certs/full/${n.id}.jpg`; });
+  }
+  function open(i) {
+    lastFocus = document.activeElement;
+    show(i); lb.classList.add('open'); document.body.style.overflow = 'hidden';
+    document.getElementById('lb-close').focus();
+  }
+  function close() {
+    lb.classList.remove('open'); document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+  const zoom = () => stage.classList.toggle('zoom');
+  document.getElementById('lb-close').onclick = close;
+  document.getElementById('lb-prev').onclick = () => show(idx - 1);
+  document.getElementById('lb-next').onclick = () => show(idx + 1);
+  document.getElementById('lb-zoom').onclick = zoom;
+  img.addEventListener('click', zoom);
+  img.addEventListener('contextmenu', e => e.preventDefault()); 
+  stage.addEventListener('click', e => { if (e.target === stage) close(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') show(idx - 1);
+    else if (e.key === 'ArrowRight') show(idx + 1);
+  });
+  let sx = null;
+  stage.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
+  stage.addEventListener('touchend', e => {
+    if (sx === null || stage.classList.contains('zoom')) return;
+    const dx = e.changedTouches[0].clientX - sx; sx = null;
+    if (Math.abs(dx) > 50) show(idx + (dx < 0 ? 1 : -1));
+  });
+
+  
+  function openById(id) {
+    setFilter('all');
+    const i = view.findIndex(c => c.id === id);
+    if (i >= 0) open(i);
+  }
+  document.querySelectorAll('[data-open]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); openById(a.dataset.open); }));
+  document.querySelectorAll('[data-filter]').forEach(a => a.addEventListener('click', () => setFilter(a.dataset.filter)));
+
+  setFilter('all');
+  if (/^#cert-\d+$/.test(location.hash)) openById(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>

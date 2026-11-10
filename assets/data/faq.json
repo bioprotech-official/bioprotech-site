@@ -1,0 +1,150 @@
+{
+  "categories": [
+    {
+      "id": "product",
+      "name": {
+        "ko": "Product",
+        "en": "Product",
+        "es": "Producto"
+      }
+    },
+    {
+      "id": "order",
+      "name": {
+        "ko": "Order & Shipping",
+        "en": "Order & Shipping",
+        "es": "Pedido y envío"
+      }
+    },
+    {
+      "id": "quality",
+      "name": {
+        "ko": "Quality & Certification",
+        "en": "Quality & Certification",
+        "es": "Calidad y certificación"
+      }
+    },
+    {
+      "id": "etc",
+      "name": {
+        "ko": "Other",
+        "en": "Other",
+        "es": "Otros"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "q1",
+      "cat": "product",
+      "q": {
+        "ko": "What product lines are offered?",
+        "en": "What product lines are offered?",
+        "es": "¿Qué líneas de productos se ofrecen?"
+      },
+      "a": {
+        "ko": "We offer four product lines: Electrosurgery (ESU), Cardiology (ECG), Neurology (EEG/EMG), and Pain Management (TENS). See the Products page for detail.",
+        "en": "We offer four product lines: Electrosurgery (ESU), Cardiology (ECG), Neurology (EEG/EMG), and Pain Management (TENS). See the Products page for detail.",
+        "es": "Cuatro líneas de productos: Electrocirugía (ESU), Cardiología (ECG), Neurología (EEG/EMG) y Tratamiento del dolor (TENS). Consulte la página de Productos para más detalles."
+      }
+    },
+    {
+      "id": "q2",
+      "cat": "product",
+      "q": {
+        "ko": "Can I request product samples?",
+        "en": "Can I request product samples?",
+        "es": "¿Puedo solicitar muestras de productos?"
+      },
+      "a": {
+        "ko": "Yes. Please submit the inquiry form on the Contact page with product and quantity; our sales team responds within 3 business days.",
+        "en": "Yes. Please submit the inquiry form on the Contact page with product and quantity; our sales team responds within 3 business days.",
+        "es": "Sí. Envíe el formulario de consulta de la página de Contacto indicando el producto y la cantidad; nuestro equipo de ventas responde en un plazo de 3 días hábiles."
+      }
+    },
+    {
+      "id": "q3",
+      "cat": "order",
+      "q": {
+        "ko": "Is there a minimum order quantity?",
+        "en": "Is there a minimum order quantity?",
+        "es": "¿Existe una cantidad mínima de pedido?"
+      },
+      "a": {
+        "ko": "MOQ varies by product. Electrodes are sold per box, pencils per case. Contact sales for exact figures.",
+        "en": "MOQ varies by product. Electrodes are sold per box, pencils per case. Contact sales for exact figures.",
+        "es": "La cantidad mínima de pedido varía según el producto. Los electrodos se venden por caja y los lápices por estuche. Consulte al equipo de ventas las cifras exactas."
+      }
+    },
+    {
+      "id": "q4",
+      "cat": "order",
+      "q": {
+        "ko": "Do you ship internationally?",
+        "en": "Do you ship internationally?",
+        "es": "¿Realizan envíos internacionales?"
+      },
+      "a": {
+        "ko": "Yes. We supply North America through BPU and Asia through BPC (Yantai) and BPG (Guangzhou).",
+        "en": "Yes. We supply North America through BPU and Asia through BPC (Yantai) and BPG (Guangzhou).",
+        "es": "Sí. Abastecemos a Norteamérica a través de BPU y a Asia a través de BPC (Yantai) y BPG (Guangzhou)."
+      }
+    },
+    {
+      "id": "q5",
+      "cat": "quality",
+      "q": {
+        "ko": "Which international certifications do you hold?",
+        "en": "Which international certifications do you hold?",
+        "es": "¿Qué certificaciones internacionales poseen?"
+      },
+      "a": {
+        "ko": "ISO 13485, ISO 14001, CE MDR, FDA 510(k), KGMP, and MFDS, depending on the product. Certificates can be viewed on the About › Certifications page.",
+        "en": "ISO 13485, ISO 14001, CE MDR, FDA 510(k), KGMP, and MFDS, depending on the product. Certificates can be viewed on the About › Certifications page.",
+        "es": "ISO 13485, ISO 14001, CE MDR, FDA 510(k), KGMP y MFDS, según el producto. Los certificados pueden consultarse en la página Empresa › Certificaciones."
+      }
+    },
+    {
+      "id": "q6",
+      "cat": "quality",
+      "q": {
+        "ko": "Can I obtain SDS documents?",
+        "en": "Can I obtain SDS documents?",
+        "es": "¿Puedo obtener las hojas de datos de seguridad (SDS)?"
+      },
+      "a": {
+        "ko": "Submit a request on the Resources page with product and intended use; we email the SDS.",
+        "en": "Submit a request on the Resources page with product and intended use; we email the SDS.",
+        "es": "Envíe una solicitud en la página de Recursos indicando el producto y el uso previsto; le enviaremos la SDS por correo electrónico."
+      }
+    },
+    {
+      "id": "q7",
+      "cat": "etc",
+      "q": {
+        "ko": "Where do I inquire about distribution partnerships?",
+        "en": "Where do I inquire about distribution partnerships?",
+        "es": "¿Dónde puedo consultar sobre asociaciones de distribución?"
+      },
+      "a": {
+        "ko": "Use the Contact form and select \"Partnership\" as the inquiry type.",
+        "en": "Use the Contact form and select \"Partnership\" as the inquiry type.",
+        "es": "Utilice el formulario de Contacto y seleccione \"Asociación\" como tipo de consulta."
+      }
+    },
+    {
+      "id": "q8",
+      "cat": "etc",
+      "q": {
+        "ko": "Do you offer OEM/ODM services?",
+        "en": "Do you offer OEM/ODM services?",
+        "es": "¿Ofrecen servicios de OEM/ODM?"
+      },
+      "a": {
+        "ko": "Available for selected product lines. Share your spec and expected volume with our sales team for a feasibility review.",
+        "en": "Available for selected product lines. Share your spec and expected volume with our sales team for a feasibility review.",
+        "es": "Disponible para líneas de productos seleccionadas. Comparta sus especificaciones y el volumen previsto con nuestro equipo de ventas para una evaluación de viabilidad."
+      }
+    }
+  ]
+}

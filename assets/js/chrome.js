@@ -40,7 +40,7 @@
 
   // --------- Mega-menu data ----------
   const MEGA_CATS = [
-    {id:'esu',    name:{ko:'Electrosurgery', en:'Electrosurgery',  es:'Electrocirugía'},       code:'ESU'},
+    {id:'esu',    name:{ko:'Electro Surgery', en:'Electro Surgery',  es:'Electrocirugía'},       code:'ESU'},
     {id:'cardio', name:{ko:'Cardiology',   en:'Cardiology',      es:'Cardiología'},           code:'ECG'},
     {id:'neuro',  name:{ko:'Neurology', en:'Neurology',       es:'Neurología'},            code:'EEG · EMG'},
     {id:'pain',   name:{ko:'Pain Management', en:'Pain Management', es:'Tratamiento del dolor'}, code:'TENS'},
@@ -181,7 +181,7 @@
   
   
   const SNS_LINKS = [
-    { id:'instagram', name:'Instagram', url:'https://www.instagram.com/',
+    { id:'instagram', name:'Instagram', url:'https://www.instagram.com/bioprotech.official/',
       icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>' },
     { id:'wechat', name:'WeChat', url:'http://weixin.qq.com/r/mp/TBHs9NfE5IqbrZOX90Re', qr:'/assets/img/wechat-qr.svg', search:'烟台博奥医疗器械有限公司',
       icon:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.2 4C5.2 4 2 6.7 2 10c0 1.9 1 3.6 2.7 4.7L4 17l2.6-1.3c.8.2 1.7.4 2.6.4h.5a5.6 5.6 0 0 1-.2-1.5c0-3.4 3.2-6.1 7.2-6.1h.4C16.4 6.2 13.1 4 9.2 4zM6.8 8.9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm4.8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/><path d="M22 14.5c0-2.8-2.7-5-6.1-5s-6.1 2.2-6.1 5 2.7 5 6.1 5c.7 0 1.4-.1 2-.3l2.1 1.1-.6-1.9c1.6-.9 2.6-2.3 2.6-3.9zm-8.1-.8a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6zm4 0a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6z"/></svg>' },
@@ -227,13 +227,13 @@
     const FOOT_BY_LANG = {
       en: {
         prod: 'Products', comp: 'Company', sup: 'Support',
-        a1: 'Electrosurgery', a2: 'ECG Electrodes', a3: 'Neurology', a4: 'TENS / Pain',
+        a1: 'Electro Surgery', a2: 'ECG Electrodes', a3: 'Neurology', a4: 'TENS / Pain',
         b1: 'About', b2: 'History', b3: 'Global', b4: 'R&D', b5: 'Quality Policy', b6: 'Certifications', sns: 'Follow Bioprotech',
         c1: 'Inquiry', c2: 'FAQ', c3: 'Downloads', c4: 'Certifications',
         terms: 'Terms', privacy: 'Privacy Policy',
         company: 'Bioprotech | CEO',
         reg: 'Business Reg. No.: 108-81-22350',
-        addr: '(26365) 151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do',
+        addr: '151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do 26365, Korea',
         tel: 'Tel 033-735-7720 · Fax 033-735-7736',
         copy: '© 2026 Bioprotech Co., Ltd. All rights reserved.'
       },
@@ -245,19 +245,19 @@
         terms: 'Términos', privacy: 'Política de privacidad',
         company: 'Bioprotech | Director General',
         reg: 'Núm. de registro mercantil: 108-81-22350',
-        addr: '(26365) 151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do, Corea',
+        addr: '151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do 26365, Corea',
         tel: 'Tel 033-735-7720 · Fax 033-735-7736',
         copy: '© 2026 Bioprotech Co., Ltd. Todos los derechos reservados.'
       },
       ko: {
         prod: 'Products', comp: 'Company', sup: 'Support',
-        a1: 'Electrosurgery', a2: 'ECG Electrodes', a3: 'Neurology', a4: 'TENS / Pain',
+        a1: 'Electro Surgery', a2: 'ECG Electrodes', a3: 'Neurology', a4: 'TENS / Pain',
         b1: 'About', b2: 'History', b3: 'Global', b4: 'R&D', b5: 'Quality Policy', b6: 'Certifications', sns: 'Follow Bioprotech',
         c1: 'Inquiry', c2: 'FAQ', c3: 'Downloads', c4: 'Certifications',
         terms: 'Terms', privacy: 'Privacy Policy',
         company: 'Bioprotech | CEO',
         reg: 'Business Reg. No.: 108-81-22350',
-        addr: '(26365) 151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do',
+        addr: '151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do 26365, Korea',
         tel: 'Tel 033-735-7720 · Fax 033-735-7736',
         copy: '© 2026 Bioprotech Co., Ltd. All rights reserved.'
       }

@@ -22,20 +22,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="../assets/css/site.css" rel="stylesheet"/>
 <style>
   
-  .page-body { overflow-x: clip; }
-  .ceo-hero { margin: -80px calc(50% - 50vw) 0; display: grid; grid-template-columns: 1fr 1.15fr; min-height: 560px; }
+  .page-body { overflow-x: clip; padding-bottom: 0 !important; }
+  .ceo-hero { margin: -80px calc(50% - 50vw) 0; display: grid; grid-template-columns: 1.2fr 1fr; min-height: 560px; }
   .ceo-photo { background: #0a1428 url("../assets/img/about/ceo-global.svg") center center / contain no-repeat; position: relative; }
   .ceo-photo { border-right: 1px solid rgba(255,255,255,.08); }
-  .ceo-photo span { position: absolute; left: 24px; bottom: 20px; font-size: 12px; letter-spacing: .12em; color: rgba(255,255,255,.8); text-transform: uppercase; }
-  .ceo-panel { background: #0a1428; color: #fff; padding: 72px max(32px, calc((100vw - 1180px) / 2)) 72px 64px; display: flex; flex-direction: column; justify-content: center; }
+  .ceo-panel { background: #0a1428; color: #fff; padding: 72px max(32px, calc((100vw - 1180px) / 2)) 72px 40px; display: flex; flex-direction: column; justify-content: center; }
   .ceo-kick { font-size: 12px; font-weight: 700; letter-spacing: .18em; color: rgba(255,255,255,.6); text-transform: uppercase; }
   .ceo-q { font-family: Georgia, "Times New Roman", serif; font-size: 120px; line-height: .55; color: #c8102e; margin: 28px 0 10px; }
-  .ceo-panel p { font-size: clamp(20px, 2.1vw, 28px); line-height: 1.6; font-weight: 600; max-width: 640px; word-break: keep-all; margin: 0; }
+  .ceo-panel p { font-size: clamp(18px, 1.7vw, 25px); line-height: 1.6; font-weight: 600; max-width: 560px; word-break: keep-all; margin: 0; }
   .ceo-rule { width: 56px; height: 2px; background: #c8102e; margin: 36px 0 16px; }
   .ceo-panel .sign { font-size: 14px; font-weight: 700; letter-spacing: .1em; color: rgba(255,255,255,.85); }
-  .ceo-more { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding: 36px 0 0; }
-  .ceo-more p { font-size: 15px; color: #424245; margin: 0; }
-  .ceo-more a { font-size: 14px; font-weight: 600; color: #14306b; border-bottom: 1px solid #14306b; padding-bottom: 2px; }
   @media (max-width: 900px) {
     .ceo-hero { grid-template-columns: 1fr; margin-top: -56px; }
     .ceo-photo { min-height: 260px; }
@@ -67,7 +63,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </nav></div>
 <main class="page-body">
 <section class="ceo-hero">
-<div aria-label="World map of Bioprotech export countries" class="ceo-photo" role="img"><span>60 Countries · Global Partnership</span></div>
+<div aria-label="World map of Bioprotech export countries" class="ceo-photo" role="img"></div>
 <div class="ceo-panel">
 <div class="ceo-kick">CEO Message</div>
 <span aria-hidden="true" class="ceo-q">“</span>
@@ -76,10 +72,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="sign"><span class="en-only">CEO, BIO PROTECH INC.</span></div>
 </div>
 </section>
-<div class="ceo-more">
-<p class="en-only">See our products and how we work on the About page.</p>
-<a href="about.html"><span class="en-only">About Bioprotech →</span></a>
-</div>
 </main>
 <div id="bp-footer-slot"></div>
 <script src="../assets/js/data-bundle.js"></script>

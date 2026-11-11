@@ -13,7 +13,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4418R1D1WV"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4418R1D1WV');</script>
 <meta charset="utf-8"/>
-<meta content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https://*.googletagmanager.com https://*.google-analytics.com https://www.google.com https://www.google.co.kr; connect-src 'self' https://formsubmit.co https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.googletagmanager.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+<meta content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https://*.googletagmanager.com https://*.google-analytics.com https://www.google.com https://www.google.co.kr; connect-src 'self' https://formsubmit.co https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://www.googletagmanager.com https://www.google.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
 <meta content="strict-origin-when-cross-origin" name="referrer"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Contact Us | Bioprotech</title>
@@ -28,6 +28,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .form-wrap { background: #F7F8FA; padding: 40px; }
   .form-wrap h3 { font-size: 20px; font-weight: 700; color: var(--bp-accent5); margin-bottom: 24px; }
   .form-actions { display: flex; gap: 12px; margin-top: 24px; }
+  .map-box { margin-top: 28px; }
+  .map-box > strong { display: block; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--bp-accent5); margin-bottom: 10px; font-weight: 700; }
+  .map-frame { position: relative; aspect-ratio: 4 / 3; background: #eef1f6; border-radius: 10px; overflow: hidden; }
+  .map-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .map-link { display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 600; color: var(--bp-accent5); }
   @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; gap: 32px; } .form-wrap { padding: 28px 20px; } }
 </style>
 <link href="../assets/css/theme-apple.css" rel="stylesheet"/>
@@ -42,14 +47,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <h1 class="en-only">Contact Us<span class="en">Inquiries</span></h1>
 
-<p class="lead en-only">Product quotes, sample requests, distribution partnerships, and other inquiries.<br/>Our sales team responds within 3 business days.</p>
+<p class="lead en-only">Product quotes, sample requests, distribution partnerships, and other inquiries.</p>
 </section>
 <main class="page-body">
 <div class="contact-grid">
 <div class="contact-info">
 <h3 class="en-only">Contact Info</h3>
 
-<div class="row en-only"><strong>HQ</strong>(26365) 151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do, Korea</div>
+<div class="row en-only"><strong>HQ</strong>151-3 Donghwagongdan-ro, Munmak-eup, Wonju-si, Gangwon-do 26365, Korea</div>
 
 <div class="row en-only"><strong>Tel / Fax</strong>+82-33-735-7720 · Fax +82-33-735-7736</div>
 <div class="row"><strong>Email</strong><a href="mailto:info@protechsite.com">info@protechsite.com</a></div>
@@ -58,7 +63,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="row en-only"><strong>Overseas Entities</strong>USA · BPU / CHN · BPC (Yantai), BPG (Guangzhou)</div>
 
-<p class="placeholder-empty en-only" style="margin-top:24px"><strong>Messaging Channel · Map</strong>Reserved for messaging channel link and Naver/Google Maps embed. To be connected after channel is set up.</p>
+<div class="map-box en-only">
+<strong>Map</strong>
+<div class="map-frame"><iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EC%9B%90%EC%A3%BC%EC%8B%9C%20%EB%AC%B8%EB%A7%89%EC%9D%8D%20%EB%8F%99%ED%99%94%EA%B3%B5%EB%8B%A8%EB%A1%9C%20151-3&amp;hl=en&amp;z=15&amp;output=embed" title="Bio Protech headquarters on Google Maps"></iframe></div>
+<a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%EA%B0%95%EC%9B%90%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84%20%EC%9B%90%EC%A3%BC%EC%8B%9C%20%EB%AC%B8%EB%A7%89%EC%9D%8D%20%EB%8F%99%ED%99%94%EA%B3%B5%EB%8B%A8%EB%A1%9C%20151-3" rel="noopener" target="_blank">Open in Google Maps →</a>
+</div>
 </div>
 <form class="form-wrap" id="contact-form" novalidate="">
 <h3 class="en-only">Inquiry Form</h3>
@@ -223,9 +232,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       window.dataLayer.push({ 'event': 'form_submit_success' });
       msg.className = 'form-msg ok';
       msg.innerHTML = ({
-        ko: '<strong>Inquiry received.</strong> Our sales team will reply to your email within 3 business days.',
-        en: '<strong>Inquiry received.</strong> Our sales team will reply to your email within 3 business days.',
-        es: '<strong>Consulta recibida.</strong> Nuestro equipo comercial responderá a su correo en un plazo de 3 días hábiles.'
+        ko: '<strong>Inquiry received.</strong>',
+        en: '<strong>Inquiry received.</strong>',
+        es: '<strong>Consulta recibida.</strong>'
       })[lang] || '';
       form.reset();
       if (btn) btn.disabled = false;

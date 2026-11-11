@@ -4,8 +4,8 @@
       "id": "esu",
       "order": 1,
       "name": {
-        "ko": "Electrosurgery",
-        "en": "Electrosurgery",
+        "ko": "Electro Surgery",
+        "en": "Electro Surgery",
         "es": "Electrocirugía"
       },
       "sub": {
@@ -14,8 +14,8 @@
         "es": "ESU"
       },
       "desc": {
-        "ko": "From smoke evacuation to electrosurgical pencils and grounding pads.",
-        "en": "From smoke evacuation to electrosurgical pencils and grounding pads.",
+        "ko": "From smoke evacuation to electro surgical pencils and grounding pads.",
+        "en": "From smoke evacuation to electro surgical pencils and grounding pads.",
         "es": "Desde la evacuación de humo hasta lápices y placas de electrocirugía."
       }
     },
@@ -97,8 +97,8 @@
         "name": "EvaQMax™ Smoke Free Unit (EvaQMax™ Electro Surgical Evacuator, EQM-U)"
       },
       "summary": {
-        "ko": "Electrosurgical smoke evacuator with a touch-screen panel, procedure operating modes that set the default suction level for the selected procedure, and a multi-port filter accepting 1/4 in, 3/8 in and 7/8 in tubing.",
-        "en": "Electrosurgical smoke evacuator with a touch-screen panel, procedure operating modes that set the default suction level for the selected procedure, and a multi-port filter accepting 1/4 in, 3/8 in and 7/8 in tubing."
+        "ko": "Electro Surgical smoke evacuator with a touch-screen panel, procedure operating modes that set the default suction level for the selected procedure, and a multi-port filter accepting 1/4 in, 3/8 in and 7/8 in tubing.",
+        "en": "Electro Surgical smoke evacuator with a touch-screen panel, procedure operating modes that set the default suction level for the selected procedure, and a multi-port filter accepting 1/4 in, 3/8 in and 7/8 in tubing."
       },
       "features": {
         "ko": [
@@ -119,7 +119,7 @@
         ]
       },
       "applications": [
-        "Surgical smoke evacuation during electrosurgery (open procedures; can be used with laparoscopic tubing/fluid trap)"
+        "Surgical smoke evacuation during electro surgery (open procedures; can be used with laparoscopic tubing/fluid trap)"
       ],
       "spec": {
         "columns": [
@@ -291,7 +291,7 @@
         ]
       },
       "applications": [
-        "Electrosurgical cutting/coagulation with smoke evacuation"
+        "Electro Surgical cutting/coagulation with smoke evacuation"
       ],
       "spec": {
         "columns": [
@@ -429,7 +429,7 @@
         ]
       },
       "applications": [
-        "Electrosurgical cutting/coagulation with smoke evacuation"
+        "Electro Surgical cutting/coagulation with smoke evacuation"
       ],
       "spec": {
         "columns": [
@@ -562,7 +562,7 @@
         ]
       },
       "applications": [
-        "Electrosurgical cutting/coagulation with smoke evacuation"
+        "Electro Surgical cutting/coagulation with smoke evacuation"
       ],
       "spec": {
         "columns": [
@@ -665,8 +665,8 @@
         "es": "Surgical Pencil"
       },
       "tagline": {
-        "ko": "Electrosurgical pencil (Ergonomic / Standard)",
-        "en": "Electrosurgical pencil (Ergonomic / Standard)",
+        "ko": "Electro Surgical pencil (Ergonomic / Standard)",
+        "en": "Electro Surgical pencil (Ergonomic / Standard)",
         "es": "Lápiz electroquirúrgico (Ergonómico / Estándar)"
       },
       "catalog": {
@@ -674,8 +674,8 @@
         "name": "PROPENCIL Series Surgical Pencil"
       },
       "summary": {
-        "ko": "PROPENCIL electrosurgical pencils are offered as an Ergonomic Pencil with an engraved non-slip handle and a Standard Pencil with a universal standard design. Both are available with push-button or rocker switches, several 2.5\" blade options, and 10 ft (3 m) or 16 ft (5 m) cables, with or without holster.",
-        "en": "PROPENCIL electrosurgical pencils are offered as an Ergonomic Pencil with an engraved non-slip handle and a Standard Pencil with a universal standard design. Both are available with push-button or rocker switches, several 2.5\" blade options, and 10 ft (3 m) or 16 ft (5 m) cables, with or without holster."
+        "ko": "PROPENCIL electro surgical pencils are offered as an Ergonomic Pencil with an engraved non-slip handle and a Standard Pencil with a universal standard design. Both are available with push-button or rocker switches, several 2.5\" blade options, and 10 ft (3 m) or 16 ft (5 m) cables, with or without holster.",
+        "en": "PROPENCIL electro surgical pencils are offered as an Ergonomic Pencil with an engraved non-slip handle and a Standard Pencil with a universal standard design. Both are available with push-button or rocker switches, several 2.5\" blade options, and 10 ft (3 m) or 16 ft (5 m) cables, with or without holster."
       },
       "features": {
         "ko": [
@@ -696,7 +696,7 @@
         ]
       },
       "applications": [
-        "Electrosurgical cutting and coagulation with an ESU generator (general electrosurgery hand piece)"
+        "Electro Surgical cutting and coagulation with an ESU generator (general electro surgery hand piece)"
       ],
       "spec": {
         "columns": [
@@ -1261,7 +1261,7 @@
         ]
       },
       "applications": [
-        "Electrosurgery (ESU) patient return electrode / grounding pad",
+        "Electro Surgery (ESU) patient return electrode / grounding pad",
         "Adult, pediatric and neonatal patients (per model)"
       ],
       "spec": {

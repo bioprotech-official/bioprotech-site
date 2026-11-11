@@ -43,8 +43,8 @@
         "es": "¿Qué líneas de productos se ofrecen?"
       },
       "a": {
-        "ko": "We offer four product lines: Electrosurgery (ESU), Cardiology (ECG), Neurology (EEG/EMG), and Pain Management (TENS). See the Products page for detail.",
-        "en": "We offer four product lines: Electrosurgery (ESU), Cardiology (ECG), Neurology (EEG/EMG), and Pain Management (TENS). See the Products page for detail.",
+        "ko": "We offer four product lines: Electro Surgery (ESU), Cardiology (ECG), Neurology (EEG/EMG), and Pain Management (TENS). See the Products page for detail.",
+        "en": "We offer four product lines: Electro Surgery (ESU), Cardiology (ECG), Neurology (EEG/EMG), and Pain Management (TENS). See the Products page for detail.",
         "es": "Cuatro líneas de productos: Electrocirugía (ESU), Cardiología (ECG), Neurología (EEG/EMG) y Tratamiento del dolor (TENS). Consulte la página de Productos para más detalles."
       }
     },
@@ -57,9 +57,9 @@
         "es": "¿Puedo solicitar muestras de productos?"
       },
       "a": {
-        "ko": "Yes. Please submit the inquiry form on the Contact page with product and quantity; our sales team responds within 3 business days.",
-        "en": "Yes. Please submit the inquiry form on the Contact page with product and quantity; our sales team responds within 3 business days.",
-        "es": "Sí. Envíe el formulario de consulta de la página de Contacto indicando el producto y la cantidad; nuestro equipo de ventas responde en un plazo de 3 días hábiles."
+        "ko": "Yes. Please submit the inquiry form on the Contact page with product and quantity; our sales team will contact you as soon as possible.",
+        "en": "Yes. Please submit the inquiry form on the Contact page with product and quantity; our sales team will contact you as soon as possible.",
+        "es": "Sí. Envíe el formulario de consulta de la página de Contacto indicando el producto y la cantidad; nuestro equipo de ventas se pondrá en contacto con usted lo antes posible."
       }
     },
     {
@@ -71,9 +71,9 @@
         "es": "¿Existe una cantidad mínima de pedido?"
       },
       "a": {
-        "ko": "MOQ varies by product. Electrodes are sold per box, pencils per case. Contact sales for exact figures.",
-        "en": "MOQ varies by product. Electrodes are sold per box, pencils per case. Contact sales for exact figures.",
-        "es": "La cantidad mínima de pedido varía según el producto. Los electrodos se venden por caja y los lápices por estuche. Consulte al equipo de ventas las cifras exactas."
+        "ko": "Minimum order quantities vary by product. Please check the product detail pages on our website, or contact our sales team and we will be happy to provide the details.",
+        "en": "Minimum order quantities vary by product. Please check the product detail pages on our website, or contact our sales team and we will be happy to provide the details.",
+        "es": "La cantidad mínima de pedido varía según el producto. Consulte las páginas de detalle de producto en nuestro sitio web o contacte con nuestro equipo de ventas y le daremos toda la información."
       }
     },
     {
@@ -85,9 +85,9 @@
         "es": "¿Realizan envíos internacionales?"
       },
       "a": {
-        "ko": "Yes. We supply North America through BPU and Asia through BPC (Yantai) and BPG (Guangzhou).",
-        "en": "Yes. We supply North America through BPU and Asia through BPC (Yantai) and BPG (Guangzhou).",
-        "es": "Sí. Abastecemos a Norteamérica a través de BPU y a Asia a través de BPC (Yantai) y BPG (Guangzhou)."
+        "ko": "Yes. We ship worldwide. Our customers and distribution partners span Europe, Asia-Pacific, the Americas, the Middle East and Africa.",
+        "en": "Yes. We ship worldwide. Our customers and distribution partners span Europe, Asia-Pacific, the Americas, the Middle East and Africa.",
+        "es": "Sí. Realizamos envíos a todo el mundo. Nuestros clientes y distribuidores se encuentran en Europa, Asia-Pacífico, América, Oriente Medio y África."
       }
     },
     {

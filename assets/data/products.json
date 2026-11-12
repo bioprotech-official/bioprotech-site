@@ -3508,10 +3508,45 @@
         "es": "TENS Electrode"
       },
       "tagline": {
-        "ko": "PROTENS transcutaneous stimulation electrode",
-        "en": "PROTENS transcutaneous stimulation electrode",
-        "es": "Electrodo de estimulación transcutánea PROTENS"
+        "ko": "PROTENS self-adhesive TENS electrode",
+        "en": "PROTENS self-adhesive TENS electrode",
+        "es": "Electrodo TENS autoadhesivo PROTENS"
       },
+      "summary": {
+        "ko": "PROTENS self-adhesive TENS electrodes with an improved gel for longer, more reliable use. The improved gel supports 20 to 30 uses per electrode, and three gel types are available to match adhesion and conductivity needs.",
+        "en": "PROTENS self-adhesive TENS electrodes with an improved gel for longer, more reliable use. The improved gel supports 20 to 30 uses per electrode, and three gel types are available to match adhesion and conductivity needs.",
+        "es": "PROTENS self-adhesive TENS electrodes with an improved gel for longer, more reliable use. The improved gel supports 20 to 30 uses per electrode, and three gel types are available to match adhesion and conductivity needs."
+      },
+      "features": {
+        "ko": [
+          "Improved gel: reusable 20 ~ 30 times (previously 10 ~ 20 times)",
+          "A type gel: low electrical resistance with strong adhesion and excellent biocompatibility",
+          "B type gel: durable adhesion and skin-friendly",
+          "C type gel: strong initial bonding, high conductivity and safe for skin contact",
+          "Biocompatibility tested according to DIN ISO 10993",
+          "Latex-free, PVC-free and DEHP-free; RoHS compliant"
+        ],
+        "en": [
+          "Improved gel: reusable 20 ~ 30 times (previously 10 ~ 20 times)",
+          "A type gel: low electrical resistance with strong adhesion and excellent biocompatibility",
+          "B type gel: durable adhesion and skin-friendly",
+          "C type gel: strong initial bonding, high conductivity and safe for skin contact",
+          "Biocompatibility tested according to DIN ISO 10993",
+          "Latex-free, PVC-free and DEHP-free; RoHS compliant"
+        ]
+      },
+      "keyspecs": {
+        "Impedance": "Below 100 Ohm",
+        "Reusable": "20 ~ 30 times",
+        "Gel Types": "A type · B type · C type",
+        "Peel-off Resistance (max.)": "10 N",
+        "MRI Compatibility (≤ 3T)": "No",
+        "X-ray Translucence": "No",
+        "Biocompatibility": "DIN ISO 10993 passed",
+        "Latex / PVC / DEHP": "Latex free · PVC free · DEHP free",
+        "RoHS Directive": "In compliance"
+      },
+      "noCatalog": true,
       "images": [
         "tens-electrode.jpg",
         "tens-electrode-2.jpg",
@@ -3602,10 +3637,70 @@
         "es": "TENS Unit"
       },
       "tagline": {
-        "ko": "TENS stimulator unit",
-        "en": "TENS stimulator unit",
-        "es": "Unidad estimuladora TENS"
+        "ko": "MAXTENS dual-channel TENS unit",
+        "en": "MAXTENS dual-channel TENS unit",
+        "es": "Unidad TENS MAXTENS de doble canal"
       },
+      "summary": {
+        "ko": "MAXTENS transcutaneous electrical nerve stimulation (TENS) units with dual channels and fully adjustable parameters. Available as the analog MAXTENS 1000 and the digital MAXTENS 2000 with LCD monitoring.",
+        "en": "MAXTENS transcutaneous electrical nerve stimulation (TENS) units with dual channels and fully adjustable parameters. Available as the analog MAXTENS 1000 and the digital MAXTENS 2000 with LCD monitoring.",
+        "es": "MAXTENS transcutaneous electrical nerve stimulation (TENS) units with dual channels and fully adjustable parameters. Available as the analog MAXTENS 1000 and the digital MAXTENS 2000 with LCD monitoring."
+      },
+      "features": {
+        "ko": [
+          "Fully adjustable: amplitude, pulse rate, pulse width, timer and mode",
+          "Easy operation, easy setting and easy control",
+          "Sturdy construction with an attractive appearance",
+          "Window cover prevents accidental output adjustment; slide cover prevents accidental parameter changes",
+          "Three stimulation modes: Burst, Modulation and Normal"
+        ],
+        "en": [
+          "Fully adjustable: amplitude, pulse rate, pulse width, timer and mode",
+          "Easy operation, easy setting and easy control",
+          "Sturdy construction with an attractive appearance",
+          "Window cover prevents accidental output adjustment; slide cover prevents accidental parameter changes",
+          "Three stimulation modes: Burst, Modulation and Normal"
+        ]
+      },
+      "keyspecs": {
+        "Channel": "Dual",
+        "Amplitude": "Adjustable, 0 ~ 80 mA peak into 500 ohm load, each channel",
+        "Power Supply": "9V battery, type 6F22",
+        "Dimension": "1\" x 2 3/4\" x 4 1/10\"",
+        "Product Configuration": "TENS unit × 1, TENS electrodes × 4, leadwires × 2, 9V battery (6F22) × 1, instruction manual × 1, carrying case × 1"
+      },
+      "spec": {
+        "columns": [
+          "Model",
+          "Type",
+          "Pulse Rate",
+          "Pulse Width",
+          "Timer",
+          "Mode",
+          "Display"
+        ],
+        "rows": [
+          [
+            "MAXTENS 1000",
+            "Analog",
+            "2 ~ 150 Hz",
+            "30 ~ 260 µs",
+            "15, 30 min, continuous",
+            "Burst, Modulation, Normal",
+            "-"
+          ],
+          [
+            "MAXTENS 2000",
+            "Digital",
+            "1 ~ 150 Hz",
+            "30 ~ 260 µs",
+            "15, 30, 45, 60, 90 min, continuous",
+            "Burst, Modulation, Normal",
+            "LCD monitoring"
+          ]
+        ]
+      },
+      "noCatalog": true,
       "images": [
         "tens-unit.jpg",
         "tens-unit-2.jpg"
@@ -3632,10 +3727,74 @@
         "es": "EMS Unit"
       },
       "tagline": {
-        "ko": "Electrical muscle stimulator",
-        "en": "Electrical muscle stimulator",
-        "es": "Estimulador muscular eléctrico"
+        "ko": "MAXEMS dual-channel muscle stimulator",
+        "en": "MAXEMS dual-channel muscle stimulator",
+        "es": "Estimulador muscular MAXEMS de doble canal"
       },
+      "summary": {
+        "ko": "MAXEMS electrical muscle stimulation (EMS) units with dual channels and adjustable contraction, relaxation and ramp times. Available as the analog MAXEMS 1000 and the digital MAXEMS 2000 with LCD monitoring.",
+        "en": "MAXEMS electrical muscle stimulation (EMS) units with dual channels and adjustable contraction, relaxation and ramp times. Available as the analog MAXEMS 1000 and the digital MAXEMS 2000 with LCD monitoring.",
+        "es": "MAXEMS electrical muscle stimulation (EMS) units with dual channels and adjustable contraction, relaxation and ramp times. Available as the analog MAXEMS 1000 and the digital MAXEMS 2000 with LCD monitoring."
+      },
+      "features": {
+        "ko": [
+          "Fully adjustable: amplitude, pulse rate, pulse width, contraction time, relaxation time, ramp time and timer",
+          "Easy operation, easy setting and easy control",
+          "Sturdy construction with an attractive appearance",
+          "Window cover prevents accidental output adjustment; slide cover prevents accidental parameter changes"
+        ],
+        "en": [
+          "Fully adjustable: amplitude, pulse rate, pulse width, contraction time, relaxation time, ramp time and timer",
+          "Easy operation, easy setting and easy control",
+          "Sturdy construction with an attractive appearance",
+          "Window cover prevents accidental output adjustment; slide cover prevents accidental parameter changes"
+        ]
+      },
+      "keyspecs": {
+        "Channel": "Dual",
+        "Amplitude": "Adjustable, 0 ~ 80 mA peak into 500 ohm load, each channel",
+        "Power Supply": "9V battery, type 6F22",
+        "Dimension": "1\" x 2 3/4\" x 4 1/10\"",
+        "Product Configuration": "EMS unit × 1, TENS electrodes × 4, leadwires × 2, 9V battery (6F22) × 1, instruction manual × 1, carrying case × 1"
+      },
+      "spec": {
+        "columns": [
+          "Model",
+          "Type",
+          "Pulse Rate",
+          "Pulse Width",
+          "Contraction (On time)",
+          "Relaxation (Off time)",
+          "Ramp",
+          "Timer",
+          "Display"
+        ],
+        "rows": [
+          [
+            "MAXEMS 1000",
+            "Analog",
+            "5, 30, 100 Hz",
+            "250 µs",
+            "1 ~ 30 sec",
+            "1 ~ 45 sec",
+            "1, 3, 5 sec",
+            "N/A",
+            "-"
+          ],
+          [
+            "MAXEMS 2000",
+            "Digital",
+            "1 ~ 150 Hz",
+            "50 ~ 250 µs",
+            "1 ~ 30 sec",
+            "1 ~ 45 sec",
+            "1 ~ 8 sec",
+            "15, 30, 45, 60 min",
+            "LCD monitoring"
+          ]
+        ]
+      },
+      "noCatalog": true,
       "images": [
         "ems-unit.jpg",
         "ems-unit-2.jpg"
@@ -3662,10 +3821,48 @@
         "es": "IF Unit"
       },
       "tagline": {
-        "ko": "Interferential current unit",
-        "en": "Interferential current unit",
-        "es": "Unidad de corriente interferencial"
+        "ko": "MAX-IF interferential current stimulator",
+        "en": "MAX-IF interferential current stimulator",
+        "es": "Estimulador de corriente interferencial MAX-IF"
       },
+      "summary": {
+        "ko": "MAX-IF 1000 interferential current (IFC) stimulation unit. Two medium-frequency currents of slightly different frequencies are superimposed, and the interference forms deep in the tissue between the electrodes. IFC uses a 4000 Hz carrier, so it crosses the skin with less stimulation than TENS and reaches greater depths and larger tissue volumes.",
+        "en": "MAX-IF 1000 interferential current (IFC) stimulation unit. Two medium-frequency currents of slightly different frequencies are superimposed, and the interference forms deep in the tissue between the electrodes. IFC uses a 4000 Hz carrier, so it crosses the skin with less stimulation than TENS and reaches greater depths and larger tissue volumes.",
+        "es": "MAX-IF 1000 interferential current (IFC) stimulation unit. Two medium-frequency currents of slightly different frequencies are superimposed, and the interference forms deep in the tissue between the electrodes. IFC uses a 4000 Hz carrier, so it crosses the skin with less stimulation than TENS and reaches greater depths and larger tissue volumes."
+      },
+      "features": {
+        "ko": [
+          "Interferential current therapy with a fixed 4000 Hz carrier frequency",
+          "Adjustable amplitude, pulse rate, mode and timer",
+          "Four frequency shift options: continuous, 1/1 abrupt, 8/8 abrupt and 10/10 ramped",
+          "Sturdy construction with an attractive appearance",
+          "Slide cover prevents accidental output adjustment and parameter changes",
+          "Runs on a 9V battery or an adaptor"
+        ],
+        "en": [
+          "Interferential current therapy with a fixed 4000 Hz carrier frequency",
+          "Adjustable amplitude, pulse rate, mode and timer",
+          "Four frequency shift options: continuous, 1/1 abrupt, 8/8 abrupt and 10/10 ramped",
+          "Sturdy construction with an attractive appearance",
+          "Slide cover prevents accidental output adjustment and parameter changes",
+          "Runs on a 9V battery or an adaptor"
+        ]
+      },
+      "keyspecs": {
+        "Model": "MAX-IF 1000",
+        "Type": "Analog",
+        "Channel": "Dual",
+        "Carrier Frequency": "(4000 ± 10%) Hz, fixed",
+        "Difference Frequency": "(1 ± 0.5) ~ (150 ± 10%) Hz, adjustable",
+        "Output Voltage": "20 V ± 10%",
+        "Pulse Width": "(125 ± 10%) µs",
+        "Timer": "15, 30 min, continuous",
+        "Frequency Shift": "Continuous, 1/1 abrupt, 8/8 abrupt, 10/10 ramped",
+        "Power Supply": "9V battery, type 6F22, or adaptor",
+        "Dimension": "1\" x 2 1/2\" x 3 7/10\"",
+        "Product Configuration": "IF unit × 1, TENS electrodes × 4, leadwires × 2, 9V battery (6F22) × 1, instruction manual × 1, carrying case × 1"
+      },
+      "noCatalog": true,
       "images": [
         "if-unit.jpg"
       ],

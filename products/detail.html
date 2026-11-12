@@ -336,7 +336,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   
   const dl = document.getElementById('dl-wrap');
-  if (prod.catalog) {
+  if (prod.noCatalog) {
+    dl.closest('.spec-block').style.display = 'none';
+    document.getElementById('cat-btn').style.display = 'none';
+  } else if (prod.catalog) {
     const f = prod.catalog.file, cover = f.replace('.pdf', '-cover.jpg');
     dl.innerHTML = `<div class="dl-cat"><img src="../assets/catalog/${cover}" alt=""><div><b>${esc(prod.catalog.name || f)}</b><span>PDF · ${L('Product catalog','Product catalog','Catálogo')}</span></div><a href="../assets/catalog/${f}" target="_blank" rel="noopener">${L('View catalog','View catalog','Ver catálogo')} ↗</a></div>`;
     const cb = document.getElementById('cat-btn'); cb.href = `../assets/catalog/${f}`; cb.setAttribute('download', '');

@@ -2425,10 +2425,110 @@
         "es": "SpO₂ Sensor"
       },
       "tagline": {
-        "ko": "Oxygen saturation sensor",
-        "en": "Oxygen saturation sensor",
-        "es": "Sensor de saturación de oxígeno"
+        "ko": "OXI-PRO pulse oximetry sensor",
+        "en": "OXI-PRO pulse oximetry sensor",
+        "es": "Sensor de pulsioximetría OXI-PRO"
       },
+      "summary": {
+        "ko": "OXI-PRO SpO₂ sensors designed for comfort and accuracy, compatible with major pulse oximeter systems. Disposable and reusable types cover adult, pediatric, infant and neonatal patients.",
+        "en": "OXI-PRO SpO₂ sensors designed for comfort and accuracy, compatible with major pulse oximeter systems. Disposable and reusable types cover adult, pediatric, infant and neonatal patients.",
+        "es": "OXI-PRO SpO₂ sensors designed for comfort and accuracy, compatible with major pulse oximeter systems. Disposable and reusable types cover adult, pediatric, infant and neonatal patients."
+      },
+      "features": {
+        "ko": [
+          "Compatible with major leading pulse oximeter systems",
+          "Bright, high-quality LEDs to maximize signal tracking",
+          "Four bandage styles for monitoring all patient populations",
+          "One-piece bandage with visible alignment marks for ease of use and patient comfort",
+          "Built-in shielding for the photodiode and cable to protect the signal during transmission",
+          "Gold-plated connector pins; elastic cotton tape",
+          "Cost-effective"
+        ],
+        "en": [
+          "Compatible with major leading pulse oximeter systems",
+          "Bright, high-quality LEDs to maximize signal tracking",
+          "Four bandage styles for monitoring all patient populations",
+          "One-piece bandage with visible alignment marks for ease of use and patient comfort",
+          "Built-in shielding for the photodiode and cable to protect the signal during transmission",
+          "Gold-plated connector pins; elastic cotton tape",
+          "Cost-effective"
+        ]
+      },
+      "keyspecs": {
+        "Application": "Adult, Pediatric, Infant, Neonatal",
+        "Usage": "Disposable, Reusable",
+        "SpO₂ Accuracy": "70 ~ 100% (±2 digits) adult, pediatric, infant; 70 ~ 100% (±3 digits) neonate; 0 ~ 69% unspecified",
+        "LED Wavelength": "Red LED 660 nm nominal · IR LED 900 nm nominal",
+        "Cable Length": "900 mm"
+      },
+      "spec": {
+        "columns": [
+          "Model",
+          "Usage",
+          "Patient",
+          "Patient Weight",
+          "Cable Length"
+        ],
+        "rows": [
+          [
+            "OXI-DA / OXI-DA(E)",
+            "Disposable",
+            "Adult",
+            "> 30 kg",
+            "900 mm"
+          ],
+          [
+            "OXI-DP / OXI-DP(E)",
+            "Disposable",
+            "Pediatric",
+            "10 ~ 50 kg",
+            "900 mm"
+          ],
+          [
+            "OXI-DI / OXI-DI(E)",
+            "Disposable",
+            "Infant",
+            "3 ~ 20 kg",
+            "900 mm"
+          ],
+          [
+            "OXI-DN / OXI-DN(E)",
+            "Disposable",
+            "Neonatal",
+            "< 3 kg",
+            "900 mm"
+          ],
+          [
+            "OXI-DAC / OXI-DAC(E)",
+            "Disposable",
+            "Adult (clear tape)",
+            "> 30 kg",
+            "900 mm"
+          ],
+          [
+            "OXI-DPC / OXI-DPC(E)",
+            "Disposable",
+            "Pediatric (clear tape)",
+            "10 ~ 50 kg",
+            "900 mm"
+          ],
+          [
+            "OXI-RA / OXI-RA(E)",
+            "Reusable",
+            "Adult",
+            "> 30 kg",
+            "900 mm"
+          ],
+          [
+            "OXI-RP / OXI-RP(E)",
+            "Reusable",
+            "Pediatric",
+            "10 ~ 50 kg",
+            "900 mm"
+          ]
+        ]
+      },
+      "noCatalog": true,
       "images": [
         "spo2-sensor.jpg",
         "spo2-sensor-2.jpg",

@@ -256,7 +256,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   const cat = data.categories.find(c => c.id === prod.cat);
 
+  const bpSeo = (d, u) => { const s = String(d || '').replace(/\s+/g, ' ').trim().slice(0, 160); let m = document.querySelector('meta[name="description"]'); if (!m) { m = document.createElement('meta'); m.name = 'description'; document.head.appendChild(m); } m.content = s; let c = document.querySelector('link[rel="canonical"]'); if (!c) { c = document.createElement('link'); c.rel = 'canonical'; document.head.appendChild(c); } c.href = 'https://www.protechsite.com' + u; };
   document.title = `${prod.name[lang]} | Bioprotech`;
+  bpSeo((prod.summary && (prod.summary.en || prod.summary.ko)) || `${prod.name.en} by Bioprotech, ${cat.name.en} medical device manufacturer.`, `/products/detail.html?id=${prod.id}`);
   const L = (ko, en, es) => lang === 'ko' ? ko : lang === 'es' ? (es || en) : en;
   const tx = o => o ? (o[lang] || o.en || o.ko || '') : '';
   const esc = v => String(v ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));

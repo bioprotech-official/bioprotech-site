@@ -70,7 +70,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     return;
   }
 
+  const bpSeo = (d, u) => { const s = String(d || '').replace(/\s+/g, ' ').trim().slice(0, 160); let m = document.querySelector('meta[name="description"]'); if (!m) { m = document.createElement('meta'); m.name = 'description'; document.head.appendChild(m); } m.content = s; let c = document.querySelector('link[rel="canonical"]'); if (!c) { c = document.createElement('link'); c.rel = 'canonical'; document.head.appendChild(c); } c.href = 'https://www.protechsite.com' + u; };
   document.title = `${cat.name[lang]} · ${cat.sub[lang]} | Bioprotech`;
+  bpSeo(cat.desc.en || cat.desc[lang], `/products/category.html?cat=${cat.id}`);
   document.getElementById('crumb-cat').textContent = cat.name[lang];
   
   document.getElementById('h1').innerHTML = `${cat.name[lang]}<span class="en" id="h1-en">${cat.sub[lang]}</span>`;

@@ -97,7 +97,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   const item = data.items[idx];
   if (!item) { document.getElementById('h1').textContent = 'Not Found'; return; }
 
+  const bpSeo = (d, u) => { const s = String(d || '').replace(/\s+/g, ' ').trim().slice(0, 160); let m = document.querySelector('meta[name="description"]'); if (!m) { m = document.createElement('meta'); m.name = 'description'; document.head.appendChild(m); } m.content = s; let c = document.querySelector('link[rel="canonical"]'); if (!c) { c = document.createElement('link'); c.rel = 'canonical'; document.head.appendChild(c); } c.href = 'https://www.protechsite.com' + u; };
   document.title = `${item.title[lang]} | Bioprotech`;
+  bpSeo((item.summary && (item.summary.en || item.summary[lang] || item.summary.ko)) || item.title.en, `/news/detail.html?id=${item.id}`);
   document.getElementById('crumb').textContent = item.title[lang];
   document.getElementById('h1').textContent = item.title[lang];
   document.getElementById('tag').textContent = item.tag[lang];
